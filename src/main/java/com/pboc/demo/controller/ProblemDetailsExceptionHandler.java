@@ -16,9 +16,8 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 /**
  * Custom {@link ResponseEntityExceptionHandler} that returns a {@link ProblemDetail} in case of
- * exception
- *
- * <p>Refer to rfc <a href="https://www.rfc-editor.org/rfc/rfc9457.html">rfc9457</a>
+ * exception.
+ * Refer to rfc <a href="https://www.rfc-editor.org/rfc/rfc9457.html">rfc9457</a>
  */
 @Slf4j
 @RestControllerAdvice
