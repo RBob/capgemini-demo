@@ -6,7 +6,7 @@
 # What's in the box:
 
 - The code: controllers, services, repos, model
-- Usage of ProblemDetail. see ProblemDetailsExceptionHandler class
+- Usage of ProblemDetail. See ProblemDetailExceptionHandler class
 - Usage of OpenApi (swagger)
 
 - Unit tests for services
