@@ -46,7 +46,7 @@ public class CustomerControllerIT {
   }
 
   @Test
-  public void when_findCustomer_withWrongInput_then_400_BAD_REQUEST() {
+  public void when_findCustomer_withBadCustomerId_then_400_BAD_REQUEST() {
 
     String badCustomerId = "not a long value";
 

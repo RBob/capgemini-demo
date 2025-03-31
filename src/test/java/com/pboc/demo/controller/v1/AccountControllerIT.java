@@ -81,14 +81,13 @@ public class AccountControllerIT {
   @Test
   public void when_openAccount_withNegativeInitialCredit_then_400_BAD_REQUEST() {
 
-    Long nonExistingCustomerId = 1L;
     BigDecimal initialCredit = BigDecimal.valueOf(-10.1);
 
     RequestEntity<OpenAccountDTO> accountRequest =
         RequestEntity.post(V1_ACCOUNT_BASE_URL)
             .header(ACCEPT, APPLICATION_JSON_VALUE)
             .header(CONTENT_TYPE, APPLICATION_JSON_VALUE)
-            .body(new OpenAccountDTO(nonExistingCustomerId, initialCredit));
+            .body(new OpenAccountDTO(customerId, initialCredit));
 
     ResponseEntity<ProblemDetail> accountResponse =
         restTemplate.exchange(accountRequest, ProblemDetail.class);
